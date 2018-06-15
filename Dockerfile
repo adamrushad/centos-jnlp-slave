@@ -6,7 +6,7 @@ RUN yum -y install java-1.8.0-openjdk-headless && yum clean all
 
 # Entrypoint
 COPY ./jenkins-slave /usr/local/bin/jenkins-slave
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/jenkins-slave"]
 
 ARG BUILD_DATE
 ARG VCS_REF
