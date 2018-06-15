@@ -2,7 +2,7 @@ FROM centos:7
 MAINTAINER AdamRushad <2429990+adamrushad@users.noreply.github.com>
 
 #Install
-RUN yum -y install openjdk-1.8.0-headless
+RUN yum -y install java-1.8.0-openjdk-headless && yum clean all
 
 # Entrypoint
 COPY ./jenkins-slave /usr/local/bin/jenkins-slave
