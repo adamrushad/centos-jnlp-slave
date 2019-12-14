@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:8
 MAINTAINER AdamRushad <2429990+adamrushad@users.noreply.github.com>
 
 #Install
